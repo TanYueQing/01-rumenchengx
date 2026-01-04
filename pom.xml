@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Mybatistest</artifactId>
+        <groupId>Mybatistest</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>01-rumenchengx</artifactId>
+    <dependencies>
+        <!--servlet3.1规范的坐标-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--jsp坐标-->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <!--<build>-->
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>src/main/java</directory>-->
+                <!--<includes>-->
+                    <!--<include>**/*.properties</include>-->
+                    <!--<include>**/*.xml</include>-->
+                <!--</includes>-->
+                <!--<filtering>false</filtering>-->
+            <!--</resource>-->
+        <!--</resources>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<version>3.1</version>-->
+                <!--<configuration>-->
+                    <!--<source>1.8</source>-->
+                    <!--<target>1.8</target>-->
+                    <!--<encoding>UTF-8</encoding>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.18.1</version>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash;<testFailureIgnore>true</testFailureIgnore>&ndash;&gt;-->
+                    <!--<forkMode>never</forkMode>-->
+                    <!--<argLine>-Dfile.encoding=UTF-8</argLine>-->
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>src/test/resources/testNG.xml</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-war-plugin</artifactId>-->
+                <!--<version>3.3.2</version>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash;配置是否包含web应用的元数据，web。xml&ndash;&gt;-->
+                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
+                    <!--&lt;!&ndash;配置是否将依赖的jar打入web——inf／lib&ndash;&gt;-->
+                    <!--<attachClasses>true</attachClasses>-->
+                    <!--&lt;!&ndash;配置打包排除文件或目录，如指定文件&ndash;&gt;-->
+                    <!--<packagingExcludes>WEB-INF/lib/some-test-library.jar</packagingExcludes>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+        <!--</plugins>-->
+    <!--</build>-->
+
+
+    <!--<packaging>war</packaging>-->
+
+</project>
